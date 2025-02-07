@@ -1,27 +1,27 @@
-# reftext README
+# README for VSCODE-extension "reftext" language support/coloring.
 
-This is the README for VSCODE-extension "reftext". This extension provides support for the RefText language, coloring some (even nested) regex matched expressions in from the default-colored 'text' different colores (to make the 'reftext'-files better readable/diciphered between refferences and note text - at least for humans potentially so far).
-
-## Features
-
-- Syntax highlighting for RefText files
-- Support for common RefText language constructs
-- Customizable color themes for different RefText elements
+This regex (regular expression) extension for vscode provides support for 'reftext' language coloring some parts of text files for may 'better' (or wors?) decipher "notes" from "{literature refferences titles}".
 
 ## Installation
 
-1. Download and install Visual Studio Code.
-2. Open the related repository folder in Visual Studio Code + press `F5` to open a new VS Code window with the extension loaded.
-   Or install the related .vsix file to vscode.
+1. Download and install Visual Studio Code (its freeware).
+2. Install the related .vsix file to vscode (also freeware).
 
 ## Usage
 
-- Open a `.reftext` file and/or open a .txt or .md file and then change "language" in vscode (lower right frame clicking and change to 'reftext' if installed), to see the text-decipher coloring in action.
-- Maybe needs to edit own vscode settings.json file to customize the color theme and/or word-wrapping etc for optimal functioning of this vscode-extension.
+- 1. Open a .txt, .md, or .reftext file in vscode and then change "language" in vscode (lower right frame clicking on the actual language changing it to 'reftext', if installed), to see some text-decipher coloring in action.
+- 2. The COLORS of that extension reley on some additional "code" adding once self to "settings.json" (eg. c:\C:\Users\*once user name*\AppData\Roaming\Code\User\settings.json) to show desired/changeble colors to "{ + }, ",", "4digits", "other characters within {}'s.
+     "textMateRules": [
+     {"scope": "IN.reftext", "settings": { "foreground": "#ffee03" }},
+     {"scope": "headline.reftext", "settings": { "foreground": "#fc05b2" }},
+     {"scope": "comment.reftext", "settings": { "foreground": "#17c017" }},
+     {"scope": "year.reftext", "settings": { "foreground": "#224fca" }},
+     {"scope": "comma.reftext", "settings": { "foreground": "#ffee03" }},
+     {"scope": "else.in.reftext", "settings": { "foreground": "#cfcfcf" }}
+
+     there should be at least one ADDIOTNAL "{" at the beginning and one ADDITIONAL "}" at the end of once settings.json file ('some how').
 
 ## Release Notes
-
-### 1.0.0
 
 - Initial release of RefText language support 0.0.1 (2025-01-13)
 - Release of reftext language support version 1.0   (2025-02-07)
