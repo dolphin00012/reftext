@@ -16,11 +16,12 @@ This is the README for VSCODE-extension "reftext". This extension provides suppo
 
 ## Usage
 
-- Open a `.reftext` file to see the text-deciphering coloring in action.
+- Open a `.reftext` file and/or open a .txt or .md file and then change "language" in vscode (lower right frame clicking and change to 'reftext' if installed), to see the text-decipher coloring in action.
 - Maybe needs to edit own vscode settings.json file to customize the color theme and/or word-wrapping etc for optimal functioning of this vscode-extension.
 
 ## Release Notes
 
-### 0.0.1
+### 1.0.0
 
-- Initial release of RefText language support
+- Initial release of RefText language support 0.0.1 (2025-01-13)
+- Release of reftext language support version 1.0   (2025-02-07)
