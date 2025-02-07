@@ -31,6 +31,11 @@ some parts of text files for may 'better' (or wors?) decipher "notes" from "{lit
      in 'once normal settings.json' at once needs. (the souurce code of this regex-extension is freely
      downloadable from github.com/dolphin00012/reftext).
 
+- 4. Advise: if one changes the content of "self-actual settings.json" and or "self-actual reftext.language.json"
+     shown emidiate effects in coloring some character-amount-parts different is only 100% saved to once's
+     environment after uninstalling the .vsix -> compiling (ask maybe an AI how to do that) and then reinstalling
+     the .vsix file.
+
 ## Release Notes
 
 - Initial release of reftext language 0.0.1 (2025-01-13)
