@@ -1,9 +1,0 @@
-{"scopeName": "source.reftext", "foldingStartMarker": "^#",
-"patterns": [
-{"name": "headline.reftext", "match": "^#.*$"},
-{"name": "comment.reftext",  "match": "^//.*$"},
-{"name": "IN.reftext",       "begin": "\\{", "end": "\\}", "patterns": [ 
-{"name": "year.reftext",     "match": "\\d{4}"},
-{"name": "comma.reftext",    "match": ",\\s"},
-{"name": "else.in.reftext",  "match": "."}
-]}]}
