@@ -1,40 +1,37 @@
-# README for VSCODE-extension "reftext" language support/coloring. (github.com/dolphin00012/reftext)
+# README
+This README is for VSCODE-extension "reftext" language support/coloring. (github.com/dolphin00012/reftext).
+This regex (regular expression) extension for vscode provides support for 'reftext' language coloring some
+parts of text files for may 'better' (or wors?) decipher "notes" from "{literature refferences titles}".
 
-  This regex (regular expression) extension for vscode provides support for 'reftext' language coloring
-  some parts of text files for may 'better' (or wors?) decipher "notes" from "{literature refferences titles}".
+# INSTALLATION
+1. Download and install Visual Studio Code ('freeware').
+2. Install the related .vsix file to vscode ('freeware').
 
-# Installation
+# FEATURES
+characters in a line beginnging with "#" => colored pink, "word::" => colored green,
+any character within "{}" => colored white (a dark theme for vscode editor was used whilst developing this
+extension), year (*4digits*) within {} => colored blue, any character outside {} => colored grey, "*word*"
+=> colored green (at least if not in "#" beginning code line, and only if outside {}'s).
 
-  1. Download and install Visual Studio Code (its freeware).
-  2. Install the related .vsix file to vscode (also freeware).
+# USAGE
+1. Open a .txt, .md, or .reftext file in vscode and then change "language" in vscode (lower right
+frame clicking on the actual languagechanging it to 'reftext', if installed), to see some text-decipher
+coloring in action.
+2. The COLORIZATION the extension depends on the following ADDED "code lines" to ones own "settings.json":
+(eg. to C:\Users\*username*\AppData\Roaming\Code\User\settings.json):
 
-# Usage
+"editor.tokenColorCustomizations": {
+"textMateRules": [
+{"scope": "dotword.reftext", "settings": { "foreground": "#00ff00" }},
+{"scope": "asteriskword.reftext", "settings": { "foreground": "#00ff00" }},
+{"scope": "IN.reftext", "settings": { "foreground": "#ffee03" }},
+{"scope": "headline.reftext", "settings": { "foreground": "#fc05b2" }},
+{"scope": "comment.reftext", "settings": { "foreground": "#17c017" }},
+{"scope": "year.reftext", "settings": { "foreground": "#00AEFF" }},
+{"scope": "comma.reftext", "settings": { "foreground": "#ffee03" }},
+{"scope": "else.in.reftext", "settings": { "foreground": "#cfcfcf" }}]},
 
-  1. Open a .txt, .md, or .reftext file in vscode and then change "language" in vscode (lower right
-     frame clicking on the actual languagechanging it to 'reftext', if installed), to see some text-decipher
-     coloring in action.
-  2. The COLORS of that extension reley on some additional "code" adding one self to "settings.json"
-     (eg. c:\C:\Users\*username*\AppData\Roaming\Code\User\settings.json) to show desired/changeble
-     colors to "{ ... "4digits" ... }" and any thing outside braketc in different color/s (aftwords text can be
-     inserted after the thirst "{"):
-
-     "editor.wordWrap": "off",
-     "workbench.colorCustomizations": { "editor.background": "#000000", "editor.foreground": "#6E6E6E", "editor.lineHighlightBackground": "#59044E99", "editor.selectionHighlightBackground": "#87390099", "editor.wordHighlightBackground": "#87390099" },
-     "settingsSync.ignoredSettings": [],
-     "editor.foldingStrategy": "auto",
-     "editor.tokenColorCustomizations": {
-     "textMateRules": [
-     {"scope": "dotword.reftext", "settings": { "foreground": "#fc05b2" }},
-     {"scope": "asteriskword.reftext", "settings": { "foreground": "#17c017" }},
-     {"scope": "IN.reftext", "settings": { "foreground": "#ffee03" }},
-     {"scope": "headline.reftext", "settings": { "foreground": "#fc05b2" }},
-     {"scope": "comment.reftext", "settings": { "foreground": "#17c017" }},
-     {"scope": "year.reftext", "settings": { "foreground": "#00AEFF" }},
-     {"scope": "comma.reftext", "settings": { "foreground": "#ffee03" }},
-     {"scope": "else.in.reftext", "settings": { "foreground": "#cfcfcf" }}]},
-
-# Release Notes
-
-  Initial release of reftext language 0.0.1 (2025-01-13)
-  Release of reftext language version 1.0   (2025-02-07)
-  Updated version                           (2025-02-21)
+# RELEASE NOTES
+Initial release of reftext language 0.0.1 (2025-01-13)
+Release of reftext language version 1.0   (2025-02-07)
+Updated version                           (2025-02-21)
