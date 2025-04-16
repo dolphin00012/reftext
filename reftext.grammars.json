@@ -1,7 +1,6 @@
-{"scopeName": "source.reftext", "foldingStartMarker": "^#",
-"patterns": [
+{"scopeName": "source.reftext", "foldingStartMarker": "^#", "patterns": [
 {"name": "headline.reftext",    "match": "^#.*$"},
-{"name": "dotword.reftext",     "match": "^\\w+\\. "},
+{"name": "dotword.reftext",     "match": "^\\w+-?\\w+\\."},
 {"name": "asteriskword.reftext","match": "(?<!\\w)\\*\\w+\\*(?!\\w)|!"},
 {"name": "comment.reftext",     "match": "^//.*$"},
 {"name": "IN.reftext",          "begin": "\\{", "end": "\\}", "patterns": [ 
