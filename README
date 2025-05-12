@@ -1,7 +1,8 @@
 # README
 This README is for VSCODE-extension "reftext" language support/coloring. (github.com/dolphin00012/reftext).
 This regex (regular expression) extension for vscode provides support for 'reftext' language coloring some
-parts of text files for may 'better' (or wors?) decipher "notes" from "{literature refferences titles}".
+parts of text files for may 'better' or at least decipher "notes" from "{literature refferences titles}"
+more coloring distinct.
 
 # INSTALLATION
 1. Download and install Visual Studio Code ('freeware').
