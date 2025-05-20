@@ -1,36 +1,41 @@
 # README
 This README is for VSCODE-extension "reftext" language support/coloring. (github.com/dolphin00012/reftext).
 This regex (regular expression) extension for vscode provides support for 'reftext' language coloring some
-parts of text files for may 'better' or at least decipher "notes" from "{literature refferences titles}"
-more coloring distinct.
+parts of text files for may 'better' decipherering "notes" against already published "{literature refferences
+titles}" whilst viewing (!), letting the pure 'uft8 po what else text/signs' stored file completly untouched.
 
 # INSTALLATION
-1. Download and install Visual Studio Code ('freeware').
-2. Install the related .vsix file to vscode ('freeware').
+1. Download and install Visual Studio Code (https://vscode.dev - but vsix is not on marketplace yet or 
+   https://code.visualstudio.com/download - on a lot hardware devices installable, for android otherewise
+   yet 'only' an alternative installable i dont know if that app can install vsix's from local locations).
+2. Install the related .vsix file to vscode (github.com/dolphi8n00012/reftext/reftext-*version*.vsix).
+3. ADD some code to your own (eg. to C:\Users\*username*\AppData\Roaming\Code\User\settings.json) file:
+   "editor.tokenColorCustomizations": {
+   "textMateRules": [
+   {"scope": "dotword.reftext", "settings": { "foreground": "#00ff00" }},
+   {"scope": "asteriskword.reftext", "settings": { "foreground": "#00ff00" }},
+   {"scope": "IN.reftext", "settings": { "foreground": "#ffee03" }},
+   {"scope": "headline.reftext", "settings": { "foreground": "#fc05b2" }},
+   {"scope": "comment.reftext", "settings": { "foreground": "#17c017" }},
+   {"scope": "year.reftext", "settings": { "foreground": "#00AEFF" }},
+   {"scope": "comma.reftext", "settings": { "foreground": "#ffee03" }},
+   {"scope": "else.in.reftext", "settings": { "foreground": "#cfcfcf" }}]},
 
 # FEATURES
-characters in a line beginnging with "#" => colored pink, "word::" => colored green,
-any character within "{}" => colored white (a dark theme for vscode editor was used whilst developing this
-extension), year (*4digits*) within {} => colored blue, any character outside {} => colored grey, "*word*"
-=> colored green (at least if not in "#" beginning code line, and only if outside {}'s).
+1. if a line begins with at least one "#" = a (foldable) title line + pink colored text in that line.
+2. if aline beings with "word." = that 1st word is colored green.
+3. if a phrase is surrounded by "{}" = the inner text is colored white (instead of grey) and any 4digits is
+   automatically shown in blue color (like a 4digits one my would use for scientific literature pdf file naming.
+4. any text or 'signs' outside {} brackets is colored automatically grey.
+5. olored green (at least if not a "#" at the beginning line, and only if outside {}'s).
 
 # USAGE
-1. Open a .txt, .md, or .reftext file in vscode and then change "language" in vscode (lower right
-frame clicking on the actual languagechanging it to 'reftext', if installed), to see some text-decipher
-coloring in action.
-2. The COLORIZATION the extension depends on the following ADDED "code lines" to ones own "settings.json":
-(eg. to C:\Users\*username*\AppData\Roaming\Code\User\settings.json):
+1. Open a "file" even a 'README' without extension. in vscode, then change "language" (lower right of vscode
+   app window to 'reftext'. -> than see colorization in action.
+2. Change ADDED "code lines" to ones own "settings.json":
 
-"editor.tokenColorCustomizations": {
-"textMateRules": [
-{"scope": "dotword.reftext", "settings": { "foreground": "#00ff00" }},
-{"scope": "asteriskword.reftext", "settings": { "foreground": "#00ff00" }},
-{"scope": "IN.reftext", "settings": { "foreground": "#ffee03" }},
-{"scope": "headline.reftext", "settings": { "foreground": "#fc05b2" }},
-{"scope": "comment.reftext", "settings": { "foreground": "#17c017" }},
-{"scope": "year.reftext", "settings": { "foreground": "#00AEFF" }},
-{"scope": "comma.reftext", "settings": { "foreground": "#ffee03" }},
-{"scope": "else.in.reftext", "settings": { "foreground": "#cfcfcf" }}]},
+
+
 
 # RELEASE NOTES
 Initial release of reftext language 0.0.1 (2025-01-13)
