@@ -1,7 +1,7 @@
 {"name": "reftext",
 "displayName": "reftext",
 "description": "reftext",
-"version": "1.0.4",
+"version": "1.0.5",
 "engines": {"vscode": "^1.96.0"},
 "categories": ["Programming Languages"],
 "contributes": {

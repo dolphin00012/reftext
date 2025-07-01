@@ -1,8 +1,9 @@
 # README
-The latest version of this README is vailable at https://github.com/dolphin00012/reftext.
-The here described regex (regular expression) extension for vscode named 'reftext language coloring (Dark Mode
-Theme) offers instant coloring of plain-text files. For decipherering "personal notes" versus published
-"{literature title text + 4digid year}" text, offering pink "# headlines", foldable text in parallel with "Markdown".
+This coloring extentension to vscvode make only sence ith in comparison/paralelll with "MARKDOWN LANGUAGE"
+https://github.com/dolphin00012/reftext installable ".vxsics for "reftext" but only if some time folded chapters
+against Markdown language. Plain-text files -> completely untouched ! For decipherering "personal notes" versus
+published "{literature title text + 4digid year}" text, offering pink "# headlines", foldable text in parallel
+with "Markdown language".
 
 # INSTALLATION
 1. Download and install Visual Studio Code (https://code.visualstudio.com/download).
