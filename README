@@ -1,14 +1,13 @@
 # README
-This coloring extentension to vscvode make only sence ith in comparison/paralelll with "MARKDOWN LANGUAGE"
-https://github.com/dolphin00012/reftext installable ".vxsics for "reftext" but only if some time folded chapters
-against Markdown language. Plain-text files -> completely untouched ! For decipherering "personal notes" versus
-published "{literature title text + 4digid year}" text, offering pink "# headlines", foldable text in parallel
-with "Markdown language".
+This vscode-extension is for coloring parts of one's own plain text file omitting eventually stored
+formatting intact. Rotative using "Markdown language" (integrated by default in vscode) it's possible
+to use folding and re-arrange big note-groups in a file. The coloring of reftext-exstension is for
+decipherering "personal notes" versus literatur reference text.
 
 # INSTALLATION
 1. Download and install Visual Studio Code (https://code.visualstudio.com/download).
-2. Install the .vsix file from https://github.com/dolphin00012/reftext/-reftext-*version*.vsix
-3. Add following code to your own vscode settings (e.g. C:\Users\*username*\AppData\Roaming\Code\User\settings.json):
+2. Install the .vsix from https://github.com/dolphin00012/reftext/reftext-1.0.6.vsix
+3. Add following to vscode-settings (e.g. C:\Users\*username*\AppData\Roaming\Code\User\settings.json):
    "editor.tokenColorCustomizations": {
    "textMateRules": [
    {"scope": "dotword.reftext", "settings": { "foreground": "#00ff00" }},
@@ -21,33 +20,32 @@ with "Markdown language".
    {"scope": "else.in.reftext", "settings": { "foreground": "#cfcfcf" }}]},
 
 # USAGE
-1. After installing vscode + the VSIX: open a "file" in vscode, then change "language" (lower right of vscode
-   app window-taskbar from plain text to reftext and see text colorization in action.
-2. One can then switch between "reftext" and "Markdown" language (installed by default) to 'fold' headline-sections.
+Open a file in vscode, change "language" (accessible from the vscode taskbar) to see the related coloring
+and if re-grouping big parts is nessesary change "language" to "Markdown" to fold text below # lines.
 
-# FEATURES
-1. If a line begins with at least one "#" = line is colored pink + a foldable headline (only in Markdown lanauge).
-2. If a line begins with "word." oder "word-word. = that "phrase" ist colored green.
-3. If a phrase is surrounded by "{}" = the inner text is colored white (instead of grey) and any 4digits are colored
-   blue delphin blue.
-4. Any character outside {} brackets is colored grey.
-5. If a *word-word* or *word* occurs outside {,} brackets = that word or word-construct is colored green.
-6. If a line begins with // = line text is colored green.
+# FEATURES (in dark-mode)
+1. Lines beginning with # = colerde pink (with reftext-extension) + foldable (with Markdown language).
+2. Lines beginning with "word." or "word-word." = phrase is colored green.
+3. Characters inside {} = colored white and four-digit number/s blue.
+4. Characters outside {} = colored grey.
+5. Characters outside {} and inside ** = colored green.
+6. Line begins with // = alle characters in that line colored green.
 
-# REFERENCES
-For creation of this vscode extension some information from following named resources there used:
-- https://npp-user-manual.org/docs/searching/#regular-expressions
-- https://www.codecademy.com/resources/docs/general/regular-expressions
-- https://vscode.dev
-- https://git-scm.com
-- https://nodejs.org/
-- https://en.wikipedia.org/wiki/Markdown
-- https://dev.azure.com + https://marketplace.visualstudio.com
-- https://www.fffuel.co/cccolor/
+# LIST (INCOMPLETE) OF USED RESOURCES
+https://en.wikipedia.org/wiki/Markdown
+https://npp-user-manual.org/docs/searching/#regular-expressions
+https://www.codecademy.com/resources/docs/general/regular-expressions
+https://git-scm.com
+https://nodejs.org/
+https://dev.azure.com
+https://marketplace.visualstudio.com
+https://www.fffuel.co/cccolor/
 
 # RELEASE NOTES
-2025-01-13 Initial release of reftext language 0.0.1, 2025-02-07 Release of reftext language version 1.0,
-2025-02-21 Updated, 2025-05-31 Updated.                           
+2025-01-13 Initial release
+2025-02-07 Update
+2025-02-21 Update
+2025-05-31 Update.                           
 
 # DONATION
 Please feel free to make donation against me at https://paypal.me/sk02
