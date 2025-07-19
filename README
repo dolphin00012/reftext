@@ -1,0 +1,51 @@
+# README
+This vscode-extension is for coloring parts of one's own plain text file omitting eventually stored
+formatting intact. Rotative using "Markdown language" (integrated by default in vscode) it's possible
+to use folding and re-arrange big note-groups in a file. The coloring of reftext-exstension is for
+decipherering "personal notes" versus literatur reference text.
+
+# INSTALLATION
+1. Download and install Visual Studio Code (https://code.visualstudio.com/download).
+2. Install the .vsix from https://github.com/dolphin00012/reftext/reftext-1.0.6.vsix
+3. Add following to vscode-settings (e.g. C:\Users\*username*\AppData\Roaming\Code\User\settings.json):
+   "editor.tokenColorCustomizations": {
+   "textMateRules": [
+   {"scope": "dotword.reftext", "settings": { "foreground": "#00ff00" }},
+   {"scope": "asteriskword.reftext", "settings": { "foreground": "#00ff00" }},
+   {"scope": "IN.reftext", "settings": { "foreground": "#ffee03" }},
+   {"scope": "headline.reftext", "settings": { "foreground": "#fc05b2" }},
+   {"scope": "comment.reftext", "settings": { "foreground": "#17c017" }},
+   {"scope": "year.reftext", "settings": { "foreground": "#00AEFF" }},
+   {"scope": "comma.reftext", "settings": { "foreground": "#ffee03" }},
+   {"scope": "else.in.reftext", "settings": { "foreground": "#cfcfcf" }}]},
+
+# USAGE
+Open a file in vscode, change "language" (accessible from the vscode taskbar) to see the related coloring
+and if re-grouping big parts is nessesary change "language" to "Markdown" to fold text below # lines.
+
+# FEATURES (in dark-mode)
+1. Lines beginning with # = colerde pink (with reftext-extension) + foldable (with Markdown language).
+2. Lines beginning with "word." or "word-word." = phrase is colored green.
+3. Characters inside {} = colored white and four-digit number/s blue.
+4. Characters outside {} = colored grey.
+5. Characters outside {} and inside ** = colored green.
+6. Line begins with // = alle characters in that line colored green.
+
+# LIST (INCOMPLETE) OF USED RESOURCES
+https://en.wikipedia.org/wiki/Markdown
+https://npp-user-manual.org/docs/searching/#regular-expressions
+https://www.codecademy.com/resources/docs/general/regular-expressions
+https://git-scm.com
+https://nodejs.org/
+https://dev.azure.com
+https://marketplace.visualstudio.com
+https://www.fffuel.co/cccolor/
+
+# RELEASE NOTES
+2025-01-13 Initial release
+2025-02-07 Update
+2025-02-21 Update
+2025-05-31 Update.                           
+
+# DONATION
+Please feel free to make donation against me at https://paypal.me/sk02
