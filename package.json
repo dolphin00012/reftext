@@ -1,16 +1,7 @@
-{"name": "reftext",
-"displayName": "reftext",
-"description": "reftext",
-"version": "1.0.6",
-"engines": {"vscode": "^1.96.0"},
+{"name": "reftext", "displayName": "reftext", "description": "reftext",
+"version": "1.0.6", "engines": {"vscode": "^1.96.0"},
 "categories": ["Programming Languages"],
+"repository": {"type": "git", "url": "https://github.com/dolphin00012/reftext.git"},
 "contributes": {
-  "languages": [{
-    "id": "reftext",
-    "aliases": ["reftext", "reftext"],
-    "extensions": [".md",".txt",".reftext"],
-    "configuration": "./reftext.language.json"}],
-  "grammars": [{
-    "language": "reftext",
-    "scopeName": "source.reftext",
-    "path": "./reftext.grammars.json"}]}}
+"languages": [{"id": "reftext", "aliases": ["reftext", "reftext"], "extensions": [".md", ".txt", ".reftext"], "configuration": "./reftext.language.json"}],
+"grammars": [{"language": "reftext", "scopeName": "source.reftext", "path": "reftext.grammars.json"}]} }
