@@ -1,0 +1,1 @@
+git pull && vscode packages && git add . && git commit -m "Update" && git push
