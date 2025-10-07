@@ -1,5 +1,5 @@
 {"name": "reftext", "displayName": "reftext", "description": "reftext",
-"version": "1.0.6", "engines": {"vscode": "^1.96.0"},
+"version": "1.0.7", "engines": {"vscode": "^1.104.3"},
 "categories": ["Programming Languages"],
 "repository": {"type": "git", "url": "https://github.com/dolphin00012/reftext.git"},
 "contributes": {
