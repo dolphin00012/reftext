@@ -6,8 +6,9 @@ decipherering "personal notes" versus literatur reference text.
 
 # INSTALLATION
 1. Download and install Visual Studio Code (https://code.visualstudio.com/download).
-2. Install the .vsix from https://github.com/dolphin00012/reftext/reftext-1.0.6.vsix
-3. Add following to vscode-settings (e.g. C:\Users\*username*\AppData\Roaming\Code\User\settings.json):
+2. Install the .vsix from https://raw.githubusercontent.com/dolphin00012/reftext/main/reftext-1.0.7.vsix
+3. Add following to vscode-settings change colors if U not use 'dark-mode'
+   (e.g. C:\Users\*username*\AppData\Roaming\Code\User\settings.json):
    "editor.tokenColorCustomizations": {
    "textMateRules": [
    {"scope": "dotword.reftext", "settings": { "foreground": "#00ff00" }},
@@ -20,8 +21,9 @@ decipherering "personal notes" versus literatur reference text.
    {"scope": "else.in.reftext", "settings": { "foreground": "#cfcfcf" }}]},
 
 # USAGE
-Open a file in vscode, change "language" (accessible from the vscode taskbar) to see the related coloring
-and if re-grouping big parts is nessesary change "language" to "Markdown" to fold text below # lines.
+Open a file in vscode, change "language" (accessible from the vscode taskbar) to see the related
+coloring and if re-grouping big parts is nessesary change "language" to "Markdown" to fold text
+below '# lines'.
 
 # FEATURES (in dark-mode)
 1. Lines beginning with # = colerde pink (with reftext-extension) + foldable (with Markdown language).
@@ -31,7 +33,7 @@ and if re-grouping big parts is nessesary change "language" to "Markdown" to fol
 5. Characters outside {} and inside ** = colored green.
 6. Line begins with // = alle characters in that line colored green.
 
-# LIST (INCOMPLETE) OF USED RESOURCES
+# LIST OF USED RESOURCES
 https://en.wikipedia.org/wiki/Markdown
 https://npp-user-manual.org/docs/searching/#regular-expressions
 https://www.codecademy.com/resources/docs/general/regular-expressions
