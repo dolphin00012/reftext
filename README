@@ -9,16 +9,16 @@ decipherering "personal notes" versus literatur reference text.
 2. Install the .vsix from https://raw.githubusercontent.com/dolphin00012/reftext/main/reftext-1.0.9.vsix
 3. Add following to vscode-settings change colors if U not use 'dark-mode'
    (e.g. C:\Users\*username*\AppData\Roaming\Code\User\settings.json):
-   "editor.tokenColorCustomizations": {
-   "textMateRules": [
-   {"scope": "dotword.reftext", "settings": { "foreground": "#00ff00" }},
-   {"scope": "asteriskword.reftext", "settings": { "foreground": "#00ff00" }},
-   {"scope": "IN.reftext", "settings": { "foreground": "#ffee03" }},
-   {"scope": "headline.reftext", "settings": { "foreground": "#fc05b2" }},
-   {"scope": "comment.reftext", "settings": { "foreground": "#17c017" }},
-   {"scope": "year.reftext", "settings": { "foreground": "#00AEFF" }},
-   {"scope": "comma.reftext", "settings": { "foreground": "#ffee03" }},
-   {"scope": "else.in.reftext", "settings": { "foreground": "#cfcfcf" }}]},
+   "editor.tokenColorCustomizations":{"textMateRules":[
+   {"scope": "dotword.reftext",       "settings": { "foreground": "#00ff00" }},
+   {"scope": "asteriskword.reftext",  "settings": { "foreground": "#00ff00" }},
+   {"scope": "IN.reftext",            "settings": { "foreground": "#ffee03" }},
+   {"scope": "headline.reftext",      "settings": { "foreground": "#fc05b2" }},
+   {"scope": "comment.reftext",       "settings": { "foreground": "#17c017" }},
+   {"scope": "year.reftext",          "settings": { "foreground": "#00AEFF" }},
+   {"scope": "onlinearticle.reftext", "settings": { "foreground": "#FF8C00" }},
+   {"scope": "comma.reftext",         "settings": { "foreground": "#ffee03" }},
+   {"scope": "else.in.reftext",       "settings": { "foreground": "#cfcfcf" }}]},
 
 # USAGE
 Open a file in vscode, change "language" (accessible from the vscode taskbar) to see the related
